@@ -1,16 +1,29 @@
 <!doctype HTML>
 <html>
-<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-<script src="aframe-ar.js"> </script>
-  <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+<script src="lib/aframe.min.js"></script>
+<script src="lib/aframe-ar.js"> </script>
+<script src="lib/aframe-gif-shader.min.js"></script>
 
-  <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs>
-  	<a-marker type='pattern' url='markers/pattern-marker-3dvtech1.patt'>
-                <a-entity geometry="primitive:plane;" rotation="-90 0 0" material="shader:gif;src:url(data/aminata_mantris.gif)" sound="src: url(data/aminata_mantris.mp3); autoplay: true"></a-entity>
-  	</a-marker>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <a-marker type='pattern' url='markers/pattern-marker-3dvtech1.patt'>
+      <a-entity geometry="primitive:plane;" rotation="-90 0 0" material="shader:gif;src:url(data/aminata_mantris.gif)" sound="src: url(data/aminata_mantris.mp3); autoplay: true"></a-entity>
+    </a-marker>
+    <a-marker type='pattern' url='markers/pattern-marker-3dvtech2.patt'>
+      <a-entity geometry="primitive:plane;" rotation="-90 0 0" material="shader:gif;src:url(data/ayoub_lezard.gif)"></a-entity>
+    </a-marker>
+    <a-marker type='pattern' url='markers/pattern-marker-3dvtech3.patt'>
+      <a-entity geometry="primitive:plane;" rotation="-90 0 0" material="shader:gif;src:url(data/eline-cheval.gif)"></a-entity>
+    </a-marker>
+    <a-marker type='pattern' url='markers/pattern-marker-3D.patt'>
+      <a-entity geometry="primitive:plane;" rotation="-90 0 0" material="shader:gif;src:url(data/meduse02.gif)"></a-entity>
+    </a-marker>
+    <a-marker type='pattern' url='markers/pattern-marker-VTech.patt'>
+      <a-entity geometry="primitive:plane;" rotation="-90 0 0" material="shader:gif;src:url(data/fabien_hyene.gif)"></a-entity>
+    </a-marker>
 
-  	<a-entity camera></a-entity>
-    </a-scene>
-  </body>
-</html>s
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
+</html>
