@@ -1,0 +1,16 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="aframe-ar.js"> </script>
+  <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+  	<a-marker type='pattern' url='markers/pattern-marker-3dvtech1.patt'>
+                <a-entity geometry="primitive:plane;" rotation="-90 0 0" material="shader:gif;src:url(data/aminata_mantris.gif)" sound="src: url(data/aminata_mantris.mp3); autoplay: true"></a-entity>
+  	</a-marker>
+
+  	<a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>s
